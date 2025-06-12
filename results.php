@@ -19,4 +19,4 @@
 ?>	
 	<!-- display the results -->
     <h4>Results:</h4>
-    <?php echo $numbers + " = " + $sum ?>
+    <?php echo $numbers . " = " . $sum ?>
