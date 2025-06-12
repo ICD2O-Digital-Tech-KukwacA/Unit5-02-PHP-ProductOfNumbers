@@ -1,18 +1,18 @@
 <?php
-    // Setting the variables
-    $userNumFirst = $_POST['firstNumber'];
-    $userNumSecond = $_POST['secondNumber'];
-
     // initalize numbers as an empty string
     $sum = 0;
     $numbers = "";
 
-    for ($counter = 0; $counter < $userNumSecond; $countr++) {
-        if ($counter < $userNumSecond){
+    // Setting the variables and validating input
+    $userNumFirst = $_POST['firstNumber'];
+    $userNumSecond = $_POST['secondNumber'];
+
+for ($counter = 0; $counter < $userNumSecond; $counter++) {
+    if ($counter < $userNumSecond - 1){
         $numbers = $numbers . $userNumFirst . "+";
     }
     else {
-        $numbers = $numbers + $counter;
+        $numbers = $numbers . $userNumFirst;
     }
     $sum = $sum + $userNumFirst;
 }
